@@ -1,16 +1,14 @@
 import Language from "./language";
+import { FormattedMessage } from "react-intl";
 
 const NavBar = () =>{
     return(
         <div className="navigation">
             <ul>
-                <li>Menu 1</li>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-                <li>Menu 4</li>
-                <li>Menu 5</li>
-                
-                <li className="menuLang"><Language/></li>
+                <li><FormattedMessage id="item1"/></li>
+                <li><FormattedMessage id="item2"/></li>
+                <li><FormattedMessage id="item3"/></li>
+                <li><FormattedMessage id="item4"/></li>   
             </ul>
         </div>
     );

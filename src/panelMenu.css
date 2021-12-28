@@ -1,0 +1,29 @@
+.p-menuitem-link{
+    transition: all ease-in-out 200ms !important;
+}
+.p-menuitem-text, .p-menuitem-link,.p-panelmenu .p-panelmenu-header > a,.p-menuitem-icon{
+    color: white !important;
+}
+.p-panelmenu .p-panelmenu-content{
+    background-color: transparent !important;
+    border: 0 !important;
+}
+.p-menuitem-link:hover{
+    background-color: #09bc8a !important;
+}
+
+.p-panelmenu .p-panelmenu-header > a {
+    padding: 1.25rem;
+    border: 0 !important;
+    background-color: transparent !important;
+    font-weight: 300 !important;
+    border-radius: 6px;
+    transition: all ease-in-out 200ms !important;
+}
+.p-panelmenu .p-panelmenu-header > a:hover{
+    background-color: #09bc8a !important;
+}
+.p-panelmenu .p-panelmenu-header > a:focus,.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:focus{
+    box-shadow: none !important;
+    background-color: #09bc8a !important;
+}

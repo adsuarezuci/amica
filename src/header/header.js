@@ -5,7 +5,7 @@ import MenuButtom from "./menuButtom";
 import NavBar from "./navBar";
 import SmallMenu from "./smallMenu";
 
-const Header = () =>{
+const Header = ({onlangChange}) =>{
 
     const [open, setOpen] = useState(false);
 
@@ -24,8 +24,8 @@ const Header = () =>{
             <div className="BigMenu">
                 <NavBar></NavBar>
             </div>
-            <div className="smallLanguage">
-                <Language></Language>
+            <div className="language-container">
+                <Language onlangChange={onlangChange}></Language>
             </div>
             
             <SmallMenu menuClass={getMenuClass()} onMenu={changeShow}></SmallMenu>
