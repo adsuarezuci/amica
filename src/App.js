@@ -11,6 +11,8 @@ import Blog from './pages/blog';
 import Home from './pages/home';
 import Language from './i18n/language';
 import { FormattedMessage } from "react-intl"
+import ContactUsPage from './pages/contactUsPage';
+import Footer from './content/footer';
 
 function App(props) {
 
@@ -28,42 +30,21 @@ function App(props) {
 
   return (
     <I18nProvider locale = {lan}>
-      
-      
       <div className="page-container" >
           {(props.name === "empresa") ? <Empresa/> : ''}
           {(props.name === "equipo") ? <Equipo/> : ''}
           {(props.name === "servicios") ? <Servicios/> : ''}
           {(props.name === "home") ? <Home/> : ''}
           {(props.name === "blog") ? <Blog/> : ''}
+          {(props.name === "contact") ? <ContactUsPage/> : ''}
       </div>
       <MenuModern/>
       <div className="language-container">
           <Language onlangChange={changeLan}></Language>
       </div>
       <footer>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-        <p>Footer</p>
-
+        <Footer/>
       </footer>
-      
-
     </I18nProvider>
   );
 }

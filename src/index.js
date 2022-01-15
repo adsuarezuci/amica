@@ -32,6 +32,7 @@ ReactDOM.render(
             <Route path="servicios" element={<App name="servicios" />} />
             <Route path="equipo" element={<App name="equipo" />} />
             <Route path="blog" element={<App name="blog" />} />
+            <Route path="contact" element={<App name="contact" />} />
         </Route>
     </Routes>
   </BrowserRouter >,

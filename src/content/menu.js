@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { SpeedDial } from 'primereact/speeddial';
-//import { Tooltip } from 'primereact/tooltip';
 import { useNavigate } from 'react-router-dom'
 import { FormattedMessage } from "react-intl";
 import ContactUsButton from "./contactUsButton";

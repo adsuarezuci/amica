@@ -6,6 +6,7 @@
 @import "servicesSlide.css";
 @import "amicaInfo.css";
 @import "contactUs.css";
+@import "footer.css";
 
 body{
     background-color: #049d9a !important;
@@ -21,9 +22,7 @@ footer{
     padding: 20px;
     align-items: center;
 }
-h1, h2, h3, h4, h5, h6 {
-    color: #055254 !important;
-}
+
 .margin-top{
     margin-top: 20px;
 }

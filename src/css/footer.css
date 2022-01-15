@@ -1,0 +1,26 @@
+.footer{
+    color: white !important;
+}
+.footer h2{    
+    font-style: italic;
+}
+.footer-list{
+    list-style: none;
+    font-size: 15px;
+    padding-left: 0px !important;
+    margin-bottom: 30px;
+}
+.footer-list li{
+    margin-top: 10px;
+}
+.footer-list li a{
+    cursor: pointer;
+}
+.footer-list svg{
+    width: 20px;
+    margin-right: 10px;
+}
+.copyrigth{
+    text-align: center;
+    font-size: 18px;
+}
