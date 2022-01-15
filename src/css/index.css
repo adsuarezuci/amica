@@ -1,0 +1,34 @@
+@import "util.css";
+@import "i18n.css";
+@import "panelMenu.css";
+@import "menuModern.css";
+@import "intro.css";
+@import "servicesSlide.css";
+@import "amicaInfo.css";
+@import "contactUs.css";
+
+body{
+    background-color: #049d9a !important;
+    color: #114833 !important;
+    font-family: sans-serif !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #049d9a;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #055254 !important;
+}
+.margin-top{
+    margin-top: 20px;
+}
+@media (min-width: 1024px){
+    body{
+        font-size: 20px !important;
+    }
+}

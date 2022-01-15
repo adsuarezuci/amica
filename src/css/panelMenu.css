@@ -8,7 +8,7 @@
     background-color: transparent !important;
     border: 0 !important;
 }
-.p-menuitem-link:hover{
+.p-menuitem-link:hover, .p-panelmenu .p-panelmenu-header > a:hover{
     background-color: #09bc8a !important;
 }
 
@@ -20,10 +20,8 @@
     border-radius: 6px;
     transition: all ease-in-out 200ms !important;
 }
-.p-panelmenu .p-panelmenu-header > a:hover{
-    background-color: #09bc8a !important;
-}
 .p-panelmenu .p-panelmenu-header > a:focus,.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:focus{
     box-shadow: none !important;
     background-color: #09bc8a !important;
+
 }

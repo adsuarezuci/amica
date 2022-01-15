@@ -1,0 +1,68 @@
+@keyframes notifier {
+    0% { 
+        font-size: 18px;
+    }
+    25% {
+        font-size: 20px;
+    }
+    50% {
+        font-size: 18px;
+    }
+    75% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 18px;
+    }
+}
+.contact-button-menu{
+    position: fixed !important;
+    right: 100px;
+    top: 20px;
+    z-index: 50 !important;
+}
+.contact-button{
+    width: 140px;
+    background: linear-gradient(180deg, rgba(5,134,135,1) 0%, #0f6762 61%);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 40px ;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    line-height: 40px;
+    text-align: center;
+}
+.contact-button:hover{
+    animation-name: notifier;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 400ms;
+    color: #058687 !important;    
+}
+.contact-button::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(174,243,235,1) 20%, rgb(130, 219, 209) 80%);
+    position: absolute;
+    z-index: -1;
+    width: 140px;
+    height: 40px;    
+    display: block;    
+  }
+  
+  .contact-button::after{
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    transition: all 0.35s;
+  }  
+  
+  .contact-button:hover::after{    
+    top: 0px;
+    transition: all 0.35s;
+  }
+  

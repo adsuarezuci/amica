@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Language from "./language";
+import Language from "../i18n/language";
 import HeaderLogo from "./logo";
 import MenuButtom from "./menuButtom";
 import NavBar from "./navBar";

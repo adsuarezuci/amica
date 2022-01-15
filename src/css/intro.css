@@ -1,0 +1,12 @@
+
+.intro-img{
+    width: 100%;
+}
+
+@media (max-width: 992px)  {
+    .intro-img{
+        width: 100%;
+        height: auto;
+        max-width: 550px;
+    }
+}

@@ -1,4 +1,4 @@
-import Language from "./language";
+import Language from "../i18n/language";
 import { FormattedMessage } from "react-intl";
 
 const NavBar = () =>{

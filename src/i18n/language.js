@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
-import { I18nProvider, Locales } from '../i18n';
+import { I18nProvider, Locales } from '.';
 
 const Language = ({onlangChange}) =>{
 
@@ -38,20 +38,7 @@ const Language = ({onlangChange}) =>{
                 </li>
             </ul>
         </div>
-        {/* <div className="language" >
-            <select className="language-select" onChange={(e) => onlangChange(e.target.value)}>
-                <option value={Locales.SPANISH}>
-                    ES
-                 </option>
-                <option value={Locales.ENGLISH}>
-                    EN
-                </option>
-                <option value={Locales.FRENCH}>
-                    FR
-                </option>
-            </select>
-            <span className="custom-arrows"></span>
-        </div> */}
+       
         </>
         
     );
