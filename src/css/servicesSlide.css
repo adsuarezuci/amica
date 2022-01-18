@@ -40,7 +40,7 @@
     min-height: 404px !important;
     min-width: 70px !important;
     border-radius: 0px !important;
-    z-index: 40;
+    z-index: 40 !important;
 }
 .react-multiple-carousel__arrow--right {
     right: 0px !important;
@@ -59,7 +59,7 @@
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .service-slide-item{
         padding: 10px;
     }
@@ -71,6 +71,16 @@
     }
     .slide-item-description{
         font-size: 14px;
+    }
+    .react-multiple-carousel__arrow{
+        min-height: 310px !important;
+    }
+    .service-slide-item{
+        height: 330px;
+    }
+    .carousel-container{
+        height: 350px;
+    
     }
 }
 @media (min-width: 800px) {

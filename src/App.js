@@ -20,12 +20,10 @@ function App(props) {
 
   const changeLan = (arg) =>{
     setLan(arg);
-    console.log(arg);
   }
 
   useEffect(() => {
     changeLan(Locales.SPANISH)
-    console.log(props.name)
 }, []);
 
   return (

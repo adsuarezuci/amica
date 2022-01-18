@@ -3,6 +3,7 @@ import { SpeedDial } from 'primereact/speeddial';
 import { useNavigate } from 'react-router-dom'
 import { FormattedMessage } from "react-intl";
 import ContactUsButton from "./contactUsButton";
+import Logo from "./logo";
 
 
 
@@ -97,6 +98,7 @@ const MenuModern = () =>{
                     />              
             </div>
             <ContactUsButton menu />
+            <Logo />
 
             <div style={{display:'none'}}>
                 <div id="textEmpresa">                    

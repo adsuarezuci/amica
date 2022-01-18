@@ -14,3 +14,15 @@
     padding: 20px;
     max-width: 400px;
 }
+@media (max-width:767px) {
+    #img-pensando{
+        position: absolute;
+        margin-top: -430px;
+    }
+}
+@media (max-width:330px) {
+    #img-pensando{
+        position: absolute;
+        max-width: 250px;
+    }
+}

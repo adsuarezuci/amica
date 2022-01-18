@@ -1,7 +1,7 @@
 .language-container{
     position: fixed;
     right: 15px;
-    top: 25px;
+    top: 28px;
     font-size: 14px ;
     z-index: 50;
   }
@@ -18,10 +18,8 @@
     color: white;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.35);
     cursor: pointer;
-    width: 65spx;
-
-    background: linear-gradient(180deg, rgba(5,134,135,1) 0%, #0f6762 61%);
-    transition: all ease-in-out 200ms !important;
+    width: 60px;
+    background: linear-gradient(180deg, rgba(5,134,135,1) 0%, #0f6762 61%);    
     border-color: #0f6762 !important;
 }
 
@@ -39,7 +37,7 @@
     background-color: transparent;
     border-radius: 5px;
     width: 40px;
-    margin-left: 15px !important;
+    margin-left: 15px;
     
 }
 
@@ -66,4 +64,22 @@
     border-color: #10bebe !important;
     border: 1px solid;
 }
+@media (max-width: 650px) {
+    .lan-selected .down{
+        display: none;
+    }
+    .lan-selected{
+        width: 40px;
+    }
+    .language .drop-menu {
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 340px) {
+    .language-container{
+        right: 10px;
+      }
+    
+  }
 

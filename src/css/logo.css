@@ -1,0 +1,9 @@
+.amica-logo{
+    color: white;
+    font-size: 28px;
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    z-index: 50;
+    cursor: pointer;
+}

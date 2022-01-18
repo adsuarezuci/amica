@@ -1,0 +1,93 @@
+
+.service-card{
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.3);
+    /* border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-radius: 8px; */
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 30px;
+    min-width: 220px;
+}
+
+.service-card-title{
+    height: 100px;
+    line-height: 100px;
+    padding: 0px 40px;
+    background-color: rgba(20,180,171,1);
+    /* background: linear-gradient(180deg, rgba(174,243,235,1) 20%, rgb(130, 219, 209) 80%); */
+    background: linear-gradient(180deg, rgba(5,134,135,1) 0%, rgba(20,180,171,1) 61%);
+    /* color: #0f6762; */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.service-card-title-text{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+.service-card-description{
+    padding: 30px 30px;
+    /* background: white; */
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(174,243,235,0.3) 30%, rgb(130, 219, 209,0.7) 80%);
+    font-size: 20px;
+}
+@media (max-width:450px) {
+    .service-card{
+        width: 100% !important;
+    }
+    .service-card-title{
+        font-size: 22px;
+        padding: 0px 15px;
+    }
+    .service-card-description{
+        font-size: 18px;
+        padding: 25x 10px;
+    }
+}
+@media (min-width:990px) {
+    .service-card{
+        margin: 20px ;
+    }
+    /* .service-card{
+        width: 500px;
+    } */
+}
+@media (min-width:1200px) {
+    .service-card{
+        width: 500px;
+    }
+}
+
+
+@keyframes cardAnimate {
+    0%{
+        transform: scale(100%);
+        box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 30%);
+     
+    }
+    50%{
+        transform: scale(102%);
+        box-shadow: 5px 10px 10px 3px rgb(0 0 0 / 30%);
+        
+    }
+    100%{
+        transform: scale(100%);
+        box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 30%);
+    }
+}
+
+.service-card-animate{
+    animation-name: cardAnimate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.service-card-animate:hover{
+    animation-name: none;
+}

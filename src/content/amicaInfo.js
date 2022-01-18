@@ -1,22 +1,42 @@
-import { FormattedMessage } from 'react-intl'
+import { useEffect, useState } from 'react'
 import Pensando from "../pensando.svg";
 
+
 const AmicaInfo = () =>{
+    const [windowWidth,setWindowWidth] = useState(undefined)
+    const resize = () =>{
+        setWindowWidth(window.innerWidth)
+    }
+    useEffect(() => {
+        resize();
+        window.addEventListener('resize',resize);
+    }, []);
+
     return(
         <div className="container" >
             <div className="row align-items-center">
-                <div className="col-6 ">
-                    <h1 className="">¿Por qué AMICA?</h1>
-                    <p>
-                        Tenemos el impulso dinámico e innovador de los nuevos comienzos, sustentado en el sacrificio, 
-                        la profesionalidad y el compromiso de querer un mundo tecnológico 
-                        con más calidad para el aprovechamiento de todos, nos interesa el 
-                        producto y sobre todo las personas.
-                    </p>
-                </div>
-                <div className="col-6">
-                    <img id="img-pensando" src={Pensando}></img>
-                </div>
+                {windowWidth < 768 && <div className='col-12'>
+                        <h1 className="">¿Por qué AMICA?</h1>
+                        <p>
+                            Tenemos el impulso dinámico e innovador de los nuevos comienzos, sustentado en el sacrificio, 
+                            la profesionalidad y el compromiso de querer un mundo tecnológico 
+                            con más calidad para el aprovechamiento de todos, nos interesa el 
+                            producto y sobre todo las personas.
+                        </p>
+                        <img id="img-pensando" src={Pensando}></img>
+                    </div>}
+                {windowWidth >= 768 && <><div className='col-6'>
+                        <h1 className="">¿Por qué AMICA?</h1>
+                        <p>
+                            Tenemos el impulso dinámico e innovador de los nuevos comienzos, sustentado en el sacrificio, 
+                            la profesionalidad y el compromiso de querer un mundo tecnológico 
+                            con más calidad para el aprovechamiento de todos, nos interesa el 
+                            producto y sobre todo las personas.
+                        </p>
+                    </div>
+                    <div className="col-6">
+                        <img id="img-pensando" src={Pensando}></img>
+                </div></>}     
             </div>
             <div className="row">
                 <div className="col-md-6 amica-info-item-container">

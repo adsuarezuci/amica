@@ -18,7 +18,7 @@
 .contact-button-menu{
     position: fixed !important;
     right: 100px;
-    top: 20px;
+    top: 25px;
     z-index: 50 !important;
 }
 .contact-button{
@@ -64,5 +64,32 @@
   .contact-button:hover::after{    
     top: 0px;
     transition: all 0.35s;
+  }
+
+  .contact-button .pi{
+      display: none;
+  }
+
+  @media (max-width: 650px) {
+    .contact-button-menu .pi{
+        display: initial;
+        font-size: 24px !important;
+    }
+    .contact-button-menu .text{
+        display: none;
+    }
+    .contact-button-menu{
+        width: 45px;        
+        border-radius: 5px;
+        padding-top: 3px;
+        right: 70px;
+    }
+    
+  }
+  @media (max-width: 340px) {
+    .contact-button-menu{        
+        right: 60px;
+    }
+    
   }
   

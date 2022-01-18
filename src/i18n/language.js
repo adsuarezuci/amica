@@ -20,7 +20,7 @@ const Language = ({onlangChange}) =>{
                 <li className="" onClick={(e) => setShow(!show)}>
                     <div className="lan-selected">
                         {lan}
-                        <span className="down" style={{paddingLeft:'10px'}}>
+                        <span className="down" style={{paddingLeft:'8px'}}>
                             <FontAwesomeIcon icon={faSortDown}/>
                         </span>
                     </div>

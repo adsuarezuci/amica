@@ -2,6 +2,8 @@ import { FormattedMessage } from 'react-intl'
 import IntroImg from '../IntroImg.jpg'
 
 const Intro = () =>{
+    
+
     return(
         <div className="container">
             <div className="row">

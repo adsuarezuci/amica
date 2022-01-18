@@ -3,10 +3,11 @@
 @import "panelMenu.css";
 @import "menuModern.css";
 @import "intro.css";
-@import "servicesSlide.css";
+@import "service.css";
 @import "amicaInfo.css";
 @import "contactUs.css";
 @import "footer.css";
+@import "logo.css";
 
 body{
     background-color: #049d9a !important;
