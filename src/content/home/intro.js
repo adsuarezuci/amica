@@ -1,5 +1,5 @@
 import { FormattedMessage } from 'react-intl'
-import IntroImg from '../IntroImg.jpg'
+import IntroImg from '../../images/IntroImg.jpg'
 
 const Intro = () =>{
     
@@ -9,7 +9,7 @@ const Intro = () =>{
             <div className="row">
                 <div className="col-lg-6" >
                     <div className="intro-frase" >
-                        <h1><FormattedMessage id="title"/></h1>
+                        <p className='c-title'><FormattedMessage id="title"/></p>
                     </div>
                     <div className="intro-subfrase" >
                         <p>

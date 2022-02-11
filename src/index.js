@@ -22,9 +22,11 @@ import './App.scss';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ScrollToTop from './content/scrollToTop';
 
 ReactDOM.render(
   <BrowserRouter basename={'/amica'}>
+    <ScrollToTop/>
     <Routes>
         <Route path="/" element={<Layout />}>
             <Route index element={<App name="home" />} />
@@ -33,8 +35,10 @@ ReactDOM.render(
             <Route path="equipo" element={<App name="equipo" />} />
             <Route path="blog" element={<App name="blog" />} />
             <Route path="contact" element={<App name="contact" />} />
+            <Route path="pruebasEndToEnd" element={<App name="pruebasEndToEnd" />} />
         </Route>
     </Routes>
+    
   </BrowserRouter >,
   document.getElementById('root')
 );

@@ -1,0 +1,10 @@
+.team-img{
+    width: 100%;
+    max-width: 500px;
+}
+.team-frase{
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px !important;
+    font-size: 14px;
+}

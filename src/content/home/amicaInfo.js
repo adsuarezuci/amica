@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import Pensando from "../pensando.svg";
+import { FormattedMessage } from 'react-intl';
+import Pensando from "../../images/pensando.svg";
+import AmicaItem from '../amicaItem';
 
 
 const AmicaInfo = () =>{
@@ -16,8 +18,8 @@ const AmicaInfo = () =>{
         <div className="container" >
             <div className="row align-items-center">
                 {windowWidth < 768 && <div className='col-12'>
-                        <h1 className="">¿Por qué AMICA?</h1>
-                        <p>
+                        <h1 className="animate-enter"><FormattedMessage id="whyAmica" /></h1>
+                        <p className='animate-enter'>
                             Tenemos el impulso dinámico e innovador de los nuevos comienzos, sustentado en el sacrificio, 
                             la profesionalidad y el compromiso de querer un mundo tecnológico 
                             con más calidad para el aprovechamiento de todos, nos interesa el 
@@ -26,8 +28,8 @@ const AmicaInfo = () =>{
                         <img id="img-pensando" src={Pensando}></img>
                     </div>}
                 {windowWidth >= 768 && <><div className='col-6'>
-                        <h1 className="">¿Por qué AMICA?</h1>
-                        <p>
+                        <h1 className="animate-enter"><FormattedMessage id="whyAmica" /></h1>
+                        <p className='animate-enter'>
                             Tenemos el impulso dinámico e innovador de los nuevos comienzos, sustentado en el sacrificio, 
                             la profesionalidad y el compromiso de querer un mundo tecnológico 
                             con más calidad para el aprovechamiento de todos, nos interesa el 
@@ -38,28 +40,15 @@ const AmicaInfo = () =>{
                         <img id="img-pensando" src={Pensando}></img>
                 </div></>}     
             </div>
-            <div className="row">
-                <div className="col-md-6 amica-info-item-container">
-                    <div className="amica-info-item">
-                        <h3>Flexibilidad:</h3>
-                        <p>
-                            Podemos proporcionarle un equipo solido en su unión y complementación, 
-                            y a la vez flexible ante los cambios dinámicos, disfrutamos los retos,
-                             haremos que sienta que trabaja con amigos fielmente comprometidos con 
-                             su crecimiento y mejora, lo acompañamos en su proceso.
-                        </p>
-                    </div>
-                </div>
-                <div className="col-md-6 amica-info-item-container">
-                    <div className="amica-info-item">
-                        <h3>Tiempo:</h3>
-                        <p>
-                            Trabajamos para ahorrarle tiempo a la vez que damos optima calidad, 
-                            para ello nos entrenamos en la mejor metodología y las herramientas adecuadas, 
-                            contara con un equipo a su completa disposición.
-                        </p>
-                    </div>
-                </div>
+            <div className="row ">
+                <AmicaItem classLocal={"col-md-6"} 
+                    title={"Flexibilidad"}
+                    description={"Podemos proporcionarle un equipo solido en su unión y complementación, y a la vez flexible ante los cambios dinámicos, disfrutamos los retos, haremos que sienta que trabaja con amigos fielmente comprometidos con su crecimiento y mejora, lo acompañamos en su proceso."}
+                />
+                <AmicaItem classLocal={"col-md-6"} 
+                    title={"Tiempo"}
+                    description={"Trabajamos para ahorrarle tiempo a la vez que damos optima calidad, para ello nos entrenamos en la mejor metodología y las herramientas adecuadas, contara con un equipo a su completa disposición."}
+                />
             </div>
         </div>   
     )

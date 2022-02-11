@@ -8,6 +8,7 @@
 @import "contactUs.css";
 @import "footer.css";
 @import "logo.css";
+@import "team.css";
 
 body{
     background-color: #049d9a !important;
@@ -31,4 +32,22 @@ footer{
     body{
         font-size: 20px !important;
     }
+}
+.animate-enter{
+    opacity: 0;
+}
+.animate-enter-show{
+    animation: animateEnter 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateEnter {
+    0%{
+        transform: translateY(60px);
+        opacity: 0;
+    } 
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }  
 }

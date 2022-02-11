@@ -15,5 +15,6 @@ export default {
         "titleDescript":"We are a young, dynamic and innovative company that offers software engineering and quality control services using the latest practices and technologies to ensure efficient performance and implementation of high-quality projects with only one thing in mind: your success.",
         "subtitle":"Let's build better digital products together faster!",
         "contactUs":"Contact us",
+        "whyAmica":"Why Amica?",
     }
 } 

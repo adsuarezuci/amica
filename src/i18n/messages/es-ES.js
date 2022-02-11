@@ -12,8 +12,9 @@ export default {
         "careers":"Equipo",
         "blog":"Blog",
         "title":"Mejore la calidad de su software sin perder impulso",
-        "titleDescript":"Somos una empresa joven, dinámica e innovadora que ofrece servicios de ingeniería y control de calidad de software utilizando las últimas prácticas y tecnologías para garantizar el rendimiento eficaz y la implementación de proyectos de alta calidad con una sola cosa en mente: su éxito. ESP",
+        "titleDescript":"Somos una empresa joven, dinámica e innovadora que ofrece servicios de ingeniería y control de calidad de software utilizando las últimas prácticas y tecnologías para garantizar el rendimiento eficaz y la implementación de proyectos de alta calidad con una sola cosa en mente: su éxito.",
         "subtitle":"¡Construyamos juntos mejores productos digitales más rápido!",
         "contactUs":"Contáctenos",
+        "whyAmica":"¿Por qué Amica?",
     }
 } 

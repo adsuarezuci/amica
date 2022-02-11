@@ -15,5 +15,6 @@ export default {
         "titleDescript":"Nous sommes une entreprise jeune, dynamique et innovante qui offre des services d'ingénierie logicielle et de contrôle qualité utilisant les dernières pratiques et technologies pour assurer une performance efficace et la mise en œuvre de projets de haute qualité avec un seul objectif en tête : votre réussite.",
         "subtitle":"Construisons ensemble de meilleurs produits plus rapidement !",
         "contactUs":"Nous contacter",
+        "whyAmica":"Pourquoi Amica?",
     }
 } 
